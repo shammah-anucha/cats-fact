@@ -1,5 +1,4 @@
 {   
-    "python.pythonPath":"/home/shammah/.cache/pypoetry/virtualenvs/cats-fact-zSY5Hacx-py3.9",
     "python.testing.pytestArgs": [
         "tests"
     ],
