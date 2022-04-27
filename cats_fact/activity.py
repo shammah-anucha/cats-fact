@@ -18,10 +18,9 @@ def activity(response):
                               formatter=Terminal256Formatter()
                               )
     print(colorful_json)
- 
+
 
 if __name__ == "__main__.py":
     pass
 else:
     activity(response)
-    
