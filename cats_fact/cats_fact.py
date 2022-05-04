@@ -2,17 +2,16 @@ from colorama import Fore, Back, Style
 import requests
 
 
-url = "https://catfact.ninja/fact"
-
-
-def cat_facts(url):
-    response = requests.get(url)
+def cat_facts():
+    response = requests.get("https://catfact.ninja/fact")
     obj = response.json()
-    print(Fore.CYAN)
-    print(Back.WHITE + obj['fact'])
-    print(Style.RESET_ALL)
-    return obj
+
+    return obj['fact']
 
 
 if __name__ == "__main__":
-    cat_facts(url)
+    fact = cat_facts()
+    print(Fore.CYAN)
+    print(Back.WHITE)
+    print(fact)
+    print(Style.RESET_ALL)

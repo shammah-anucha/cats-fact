@@ -31,3 +31,23 @@
 
 # if __name__ == "__main__":
 #     cat_facts(url)
+
+
+
+# mock_response = mock.Mock(return_value=2)
+# mock_response.json.return_value = {"fact": "This is a string"}
+# mock_response.status_code = 200
+# print(mock_response())
+# print(mock_response.status_code)
+# print(mock_response.json())
+
+
+# mock_response = mock.Mock(name="mock_response", **{"status_code": 200, "json.return_value": {"fact": "This is a string"}})
+# print(mock_response.status_code)
+# print(mock_response.json())
+
+# mock_requests_get = mock.Mock(return_value=mock_response)
+# print(mock_requests_get().status_code)
+# print(mock_requests_get().json())
+# requests.get = mock_requests_get
+# print(cat_facts())
