@@ -1,17 +1,18 @@
-from colorama import Fore, Back, Style
+import sys
 import requests
+from colorama import Fore, Back, Style
 
 
-def cat_facts():
+def cat_facts() -> str:
     response = requests.get("https://catfact.ninja/fact")
-    obj = response.json()
+    obj: dict = response.json()
 
-    return obj['fact']
+    return obj["fact"]
 
 
 if __name__ == "__main__":
-    fact = cat_facts()
+    fact: str = cat_facts()
     print(Fore.CYAN)
-    print(Back.WHITE)
-    print(fact)
+    print(Back.WHITE, end="")
+    sys.stdout.write(fact)
     print(Style.RESET_ALL)

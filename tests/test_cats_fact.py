@@ -12,11 +12,11 @@ def test_version():
 # monkey patch
 # @mock.patch("requests.get")
 
-def test_cats_fact(mock_requests_get):
-    mock_requests_get.return_value = mock.Mock(name="mock_response",
+def test_cats_fact(mock_requests.get):
+    mock_requests.return_value = mock.Mock(name="mock_response",
                                                **{"status_code": 200,
                                                   "json.return_value": {"fact": "This is a string"}})
-    assert cat_facts() == 'This is a string'                                            
+    assert cat_facts() == 'This is a strin'                                            
     
 
 # def test_cats_fact(requests_mock):
