@@ -10,13 +10,14 @@ requests = "^2.27.1"
 Pygments = "^2.12.0"
 unicode = "^2.8"
 colorama = "^0.4.4"
-requests-mock = "^1.9.3"
-black = "^22.3.0"
+mypy = "^0.950"
+
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
 flake8 = "^4.0.1"
-mypy = "^0.942"
+requests-mock = "^1.9.3"
+black = "^22.3.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
