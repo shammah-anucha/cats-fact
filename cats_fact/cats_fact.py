@@ -1,4 +1,3 @@
-import sys
 import requests
 
 # doesn't work with poetry. Why?
@@ -15,17 +14,3 @@ def cat_facts() -> str:
 if __name__ == "__main__":
     fact = cat_facts()
     print(Fore.CYAN, Back.WHITE, fact, Style.RESET_ALL, sep="")
-
-    # print(Back.WHITE, end="")
-    # sys.stdout.write(fact)
-    # print(Style.RESET_ALL)
-
-
-# def cat_facts():
-#     response = requests.get("https://catfact.ninja/fact")
-
-#     return response.json()
-
-
-# if __name__ == "__main__":
-#     print(cat_facts())

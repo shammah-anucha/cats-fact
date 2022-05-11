@@ -99,3 +99,18 @@
 
 
 # mocking - to test
+
+
+# def cat_facts():
+#     response = requests.get("https://catfact.ninja/fact")
+
+#     return response.json()
+
+
+# if __name__ == "__main__":
+#     print(cat_facts())
+
+
+# print(Back.WHITE, end="")
+# sys.stdout.write(fact)
+# print(Style.RESET_ALL)
