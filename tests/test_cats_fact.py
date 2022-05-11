@@ -1,5 +1,4 @@
 from cats_fact import __version__
-import cats_fact
 from cats_fact.cats_fact import cat_facts
 import requests
 import pytest
