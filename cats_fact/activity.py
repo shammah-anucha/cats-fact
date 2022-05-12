@@ -13,10 +13,8 @@ def activity(response):
     # pretty print Json
     json_formatted_str = json.dumps(obj, indent=4)
     colorful_json = highlight(
-                              json_formatted_str,
-                              lexer=JsonLexer(),
-                              formatter=Terminal256Formatter()
-                              )
+        json_formatted_str, lexer=JsonLexer(), formatter=Terminal256Formatter()
+    )
     print(colorful_json)
 
 
