@@ -14,7 +14,6 @@ def test_version():
 
 
 # monkey patch
-# @mock.patch("requests.get")
 
 
 class MockResponse:
@@ -34,3 +33,11 @@ def mock_response(monkeypatch):
 def test_cats_fact(mock_response):
     result = cat_facts()
     assert result == "This is a string"
+
+
+def test_alternative(requests_mock):
+    requests_mock.get(
+        "https://catfact.ninja/fact", json={"fact": "This is a fake string"}
+    )
+
+    assert cat_facts() == "This is a fake string"
